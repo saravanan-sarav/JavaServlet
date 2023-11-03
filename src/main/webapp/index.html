@@ -1,9 +1,25 @@
 <html>
 <body>
 <form method="get" action="add">
-    <p>Enter a number : <input type="text" /></p>
-    <p>Enter a number : <input type="text" /></p>
+    <p>Enter a number : <input type="text" name="num1"/></p>
+    <p>Enter a number : <input type="text" name="num2"/></p>
     <input type="submit" value="add">
 </form>
+<form method="get" action="square">
+    <p>Enter a number : <input type="text" name="square"/></p>
+    <input type="submit" value="Square">
+</form>
+
+<form method="post" action="session">
+    <p>Enter a number : <input type="text" name="name"/></p>
+    <input type="submit" value="sessionTracking">
+</form>
+
+<form method="post" action="cookie">
+    <p>Enter a Cookie ID : <input type="text" name="cookieName"/></p>
+    <input type="submit" value="Cookie Settup">
+</form>
+
+
 </body>
 </html>

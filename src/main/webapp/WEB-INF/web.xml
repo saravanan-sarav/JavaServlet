@@ -2,6 +2,74 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>AddNumbers</servlet-name>
+    <servlet-class>com.codewithsarav.A_AddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddNumbers</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>square</servlet-name>
+    <servlet-class>com.codewithsarav.B_SquareNumbers</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>square</servlet-name>
+    <url-pattern>/square</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>session</servlet-name>
+    <servlet-class>com.codewithsarav.C_SessionTracking</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>session</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sessiontracking</servlet-name>
+    <servlet-class>com.codewithsarav.D_SessionTrackingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sessiontracking</servlet-name>
+    <url-pattern>/sessiontrackingservlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>cookie</servlet-name>
+    <servlet-class>com.codewithsarav.E_Cookie</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>cookieTracking</servlet-name>
+    <servlet-class>com.codewithsarav.F_CookieTracking</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cookieTracking</servlet-name>
+    <url-pattern>/cookieTrackingget</url-pattern>
+  </servlet-mapping>
 </web-app>
